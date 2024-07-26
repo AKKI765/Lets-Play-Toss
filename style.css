@@ -101,7 +101,7 @@ button:hover{
 
 .content{
   width:100vw;
-  height:50vh;
+  height:65vh;
   display:flex;
   
 }
@@ -184,7 +184,7 @@ img {
   .coinContainer {
     background-color: lightcyan;
     width: 34vw;
-    height: 70vh;
+    height: 65vh;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
