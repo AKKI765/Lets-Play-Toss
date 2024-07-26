@@ -101,7 +101,7 @@ button:hover{
 
 .content{
   width:100vw;
-  height:60vh;
+  height:63vh;
   display:flex;
   
 }
@@ -139,7 +139,7 @@ img {
 
 
 
-  height: 60vh;
+  height: 63vh;
   background: #4CAF50;
   border-radius: 15px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
@@ -158,7 +158,7 @@ img {
   gap:20px;
 
 
-  height: 60vh;
+  height: 63vh;
   background: #af4c4c;
   border-radius: 15px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
