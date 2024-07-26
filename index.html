@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.svg">
+    <link rel="stylesheet" href="style.css" class="">
+    <title>Let's Play Toss !!!!! : A SuperHero Toss Game </title>
+</head>
+
+<body>
+
+    <div class="mainContainer">
+
+
+        <!-- Modal Structure -->
+    
+            <div id="resultModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="resultImages">
+                        <img id="resultImage1" src="" alt="PLAYER 1" />
+                        <img id="resultImage2" src="" alt="PLAYER 2" />
+                    </div>
+                    <h2 id="resultText"></h2>
+
+                    <h1 id="imageNameP1"></h1>
+
+                    <h1 id="imageNameP2" ></h1>
+                    
+                </div>
+                
+
+
+            </div>
+
+
+            <div class="headContainer">
+                <div class="head1">
+                    <div class="logoD">
+                        <img class="logo" src="logo.svg" alt="logo">
+                    </div>
+
+                    <div class="title">
+                        <h1>LET'S PLAY TOSS </h1>
+                    </div>
+                    <div class="subHead">
+                        <h6> &nbsp;A SuperHero Toss Game</h6>
+                    </div>
+
+                </div>
+                
+                <div class="head2">
+                    <img class="iIcon" src="info.svg" alt="info" id="infoDIcon">
+                    <h3>RULES</h3>
+                    <div id="onhoverinfo">
+                    <p><b>Head Pionts: 2</b> | <b>Tail Pionts: 1</b></p>
+                    <p>Click on "Start New Game" For new game.</p>
+                    <p>Player having highest points - Winner</p>
+                    <p>Players having equal points - Draw</p>
+                </div>
+
+                </div>
+                
+
+            </div>
+
+
+            
+
+            <div class="numberToss">
+                <lable>Enter The Number Of Flips:</lable>
+                <div class="flipBtn">
+                    <input type="number" class="number" id="flipCountInput" min="1" max="10" required>
+                <!-- <button type="submit">Submit</button> -->
+                
+                
+
+                </div>
+                
+                <button id="resetButton">Start New Game</button>
+            </div>
+
+            <div class="content">
+
+
+                <!-- First Player -->
+                <div class="firstPlayer" id="colorBox1">
+
+
+
+                        <h1>PLAYER 1</h1>
+
+                        <h2>Select a Superhero Picture</h2>
+
+                    
+                    
+
+                    <div class="imageP1">
+
+
+                        <select id="imageDropdown">
+                            <option value="">Select a picture</option>
+                        </select>
+
+                        <img id="displayedImage" src="" alt="Selected Picture" style="display:none;">
+
+                    </div>
+
+                    <div id="imageName" class="imageName1" style="display:none;"></div>
+
+                    <div class="coinNum1">
+                        <h5>Heads:0</h5>
+                        <h5>Tails:0</h5>
+                        <h5>Points:0</h5>
+                        <h5>Flip Left:</h5>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+                <!-- COIN -->
+
+                <div class="coinContainer">
+
+                    <div class="coin">
+
+                        <div class="coinFace head">
+                            <img src="head.jpeg" alt="head">
+                        </div>
+
+                        <div class="coinFace tail">
+                            <img src="tail.jpeg" alt="tail">
+                        </div>
+
+                    </div>
+
+                    <div class="coinButton">
+
+                        <button id="coinButton">Let's Play</button>
+                        <audio id="coinFlipSound" src="coinFlip.mp3"></audio>
+
+
+                    </div>
+
+
+                    <div class="coinDetail">
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <!-- 2nd Player -->
+
+                <div class="secondPlayer" id="colorBox2">
+                    <h1>PLAYER 2</h1>
+
+                    <h2>Select a Superhero Picture</h2>
+
+                    <div class="imageP2">
+
+                        <select id="imageDropdown2">
+                            <option value="">Select a picture</option>
+                        </select>
+                        <img id="displayedImage2" src="" alt="Selected Picture" style="display:none;">
+
+
+                    </div>
+
+
+                    <div id="imageName2" style="display:none;"></div>
+
+                    <div class="coinNum2">
+                        <h5>Heads:0</h5>
+                        <h5>Tails:0</h5>
+                        <h5>Points:0</h5>
+                        <h5>Flip Left:</h5>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="footer">
+                <p>&copy Atul Kumar</p>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

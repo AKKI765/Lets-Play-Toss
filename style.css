@@ -1,0 +1,699 @@
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+
+body{
+ 
+  margin: 0;
+  background-color: #f0f0f0;
+  
+}
+
+
+
+.logo{
+  width:40px;
+}
+
+
+.headContainer{
+    width:100vw;
+    height:10vh;
+    background-color: rgb(0, 0, 0);
+    color: azure;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    
+}
+
+
+.head1{
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    padding: 0 10px;
+   
+
+}
+
+.logoD{
+  display: flex;
+}
+
+.head2{
+  justify-content:center;
+  align-items: center;
+  display: flex;
+  padding: 0 20px;
+
+}
+
+
+.numberToss{
+    width:100vw;
+    height:20vh;
+    background-color: rgb(102, 133, 148);
+    color: azure;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+    
+
+lable{
+    font-weight: bolder;
+    padding-top: 2px;
+}
+
+.number{
+    border: 2px solid black;
+    font-weight: bolder;
+}
+
+
+button{
+  width:70px;
+  padding:5px;
+  border-radius:3px;
+  background-color: rgb(159, 18, 91);
+  font-weight: bolder;
+  color: white;
+}
+
+button:hover{
+  cursor:pointer;
+  transform: scale(1.1);
+
+}
+
+
+.content{
+  width:100vw;
+  height:70vh;
+  display:flex;
+  
+}
+
+
+
+select {
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+
+img {
+ 
+  max-width: 100%;
+  height: auto;
+}
+
+#imageName, #imageName2 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.firstPlayer{
+  width:33vw;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px;
+
+
+
+  height: 65vh;
+  background: #4CAF50;
+  border-radius: 15px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  transform: rotateX(10deg) rotateY(20deg);
+}
+
+
+
+
+
+.secondPlayer{
+  width:33vw;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px;
+
+
+  height: 65vh;
+  background: #af4c4c;
+  border-radius: 15px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  transform: rotateX(10deg) rotateY(20deg);
+
+}
+
+
+
+@keyframes rotation {
+    0% {
+      transform: rotate3d(0, 1, 0, 0deg);
+    }
+    50% {
+      transform: rotate3d(0, 1, 0, 180deg);
+    }
+    100% {
+      transform: rotate3d(0, 1, 0, 360deg);
+    }
+  }
+
+
+  .coinContainer {
+    background-color: lightcyan;
+    width: 34vw;
+    height: 70vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+
+
+  .coin {
+    
+    position: relative;
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    line-height: 50px;
+    animation-name: rotation;
+    animation-iteration-count: 0;
+    animation-timing-function: linear;
+    animation-duration: 200ms;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    
+    
+
+  }
+
+
+
+  img{
+    width: 171px;
+    height: 171px;
+    border-radius: 50%;
+    object-fit: contain;
+    
+  }
+
+
+  .coinFace {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+  }
+
+
+  .head {
+    background-image: url("head.jpeg");
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .tail {
+    background-image: url("tail.jpeg");
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+
+
+  #coinButton{
+
+    width:100px;
+    padding:10px;
+    border:none;
+    background-color: rgb(42, 165, 157);
+    font-weight: bolder;
+   
+
+  }
+
+
+  #coinButton:hover{
+
+    cursor:pointer;
+    transform: scale(1.5);
+
+  }
+
+
+  #resetButton{
+
+    width:200px;
+    padding:10px;
+    border-radius: 3px;
+    background-color: rgb(165, 42, 42);
+    font-weight: bolder;
+
+  }
+
+
+  #resetButton:hover{
+
+    cursor:pointer;
+    transform: scale(1.1);
+
+  }
+
+
+ .footer{
+
+  background-color: black;
+  color: white;
+  width:100vw;
+  height:40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+ }
+
+
+ .iIcon{
+  filter: invert(1);
+  width:25px;
+  cursor: pointer;
+}
+
+#onhoverinfo{
+  visibility: hidden;
+  font-size: smaller;
+  position: absolute;
+  right:130px;
+  
+}
+#infoDIcon:hover ~ #onhoverinfo{
+  z-index: 1;
+  visibility: visible;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  height:65px;
+  border: 3px solid white;
+  color:black;
+   
+}
+  
+
+
+
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+
+  background: #af4c4c;
+  border-radius: 15px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  transform: rotateX(10deg) rotateY(20deg);
+
+  
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Styles for images in the modal */
+#resultImages {
+  display: flex;
+  justify-content: space-around;
+}
+
+#resultImages img {
+  max-width: 45%;
+  height: auto;
+}
+
+
+#resultText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#imageNameP1, #imageNameP2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Bakground Color for Players */
+
+
+#colorBox1 {
+  width: 33vw;
+  
+}
+
+
+#colorBox2 {
+  width: 33vw;
+  
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+
+
+@media only screen and (max-width: 480px) {
+  /* Styles for mobile devices */
+
+ .head1 h1{
+    font-size: medium;
+ }
+
+ .head1 h6{
+  font-size:5px;
+}
+
+.head2 h3{
+  font-size:x-small;
+  
+}
+
+#onhoverinfo{
+  visibility: hidden;
+  font-size: smaller;
+  position: absolute;
+  right:80px;
+  top:20px;
+  
+}
+#infoDIcon:hover ~ #onhoverinfo{
+  background-color: #4CAF50;
+  z-index: 1;
+  visibility: visible;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  height:70px;
+  border: 3px solid white;
+   
+}
+
+
+
+  .firstPlayer h1{
+    font-size: small;
+  }
+
+  .secondPlayer h1{
+    font-size: small;
+  }
+
+  .firstPlayer h2{
+    font-size: xx-small;
+  }
+
+  .secondPlayer h2{
+    font-size: xx-small;
+  }
+
+  .coinDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .coinDetail h1{
+    font-size: 12px;
+  }
+
+  .coinDetail h2{
+    font-size: x-small;
+  }
+
+
+  select{
+    font-size: 7px;
+    display: flex;
+    align-items: center;
+  }
+
+  .coin{
+    width:90px;
+    height:90px;
+  }
+
+  img{
+    width:91px;
+    height:91px;
+    
+  }
+
+  #coinButton{
+    width:60px;
+    font-size: 10px;
+  }
+
+  #imageName, #imageName2 {
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+
+  .modal-content{
+    margin:50% auto;
+  }
+
+  
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+
+  /* Styles for tablets */
+
+
+  .head1 h1{
+    font-size: x-large;
+ }
+
+ .head1 h6{
+  font-size:10px;
+}
+
+.head2 h3{
+  font-size:x-small;
+  
+}
+
+#onhoverinfo{
+  visibility: hidden;
+  font-size: smaller;
+  position: absolute;
+  right:80px;
+  top:20px;
+  
+}
+#infoDIcon:hover ~ #onhoverinfo{
+  background-color: #4CAF50;
+  z-index: 1;
+  visibility: visible;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  height:70px;
+  border: 3px solid white;
+   
+}
+
+
+  .firstPlayer h1{
+    font-size: medium;
+  }
+
+  .secondPlayer h1{
+    font-size: medium;
+  }
+
+  .firstPlayer h2{
+    font-size: x-small;
+  }
+
+  .secondPlayer h2{
+    font-size: x-small;
+  }
+
+  .coinDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .coinDetail h1{
+    font-size: 15px;
+  }
+
+  .coinDetail h2{
+    font-size: x-small;
+  }
+
+
+  select{
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .coin{
+    height:150px;
+    width:150px;
+  }
+
+  img{
+    height:151px;
+    width:151px;
+
+  }
+
+  #imageName, #imageName2 {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+ 
+
+
+  
+
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for tablets in landscape and small desktops */
+
+  
+  #infoDIcon:hover ~ #onhoverinfo{
+    background-color: #4CAF50;
+    
+     
+  }
+
+
+  .firstPlayer h2{
+    font-size: medium;
+  }
+
+  .secondPlayer h2{
+    font-size: medium;
+  }
+  .coinDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .coinDetail h1{
+    font-size: 26px;
+  }
+
+  .coinDetail h2{
+    font-size: medium;
+  }
+
+  select{
+    display: flex;
+    align-items: center;
+  }
+
+  
+}
+
+
+
+
+@media only screen and (min-width: 1025px) {
+  /* Styles for desktops */
+
+  body{
+    background-color: #f0f0f0; 
+
+  }
+
+  #infoDIcon:hover ~ #onhoverinfo{
+    background-color: #4CAF50;
+     
+  }
+  
+}

@@ -1,0 +1,14 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Outer Circle for the coin -->
+  <circle cx="100" cy="100" r="90" fill="#FFD700" stroke="#DAA520" stroke-width="10" />
+  
+  <!-- Inner Circle for the coin -->
+  <circle cx="100" cy="100" r="80" fill="#FFFFE0" stroke="#DAA520" stroke-width="5" />
+
+  <!-- Superhero Diamond Shape -->
+  <polygon points="100,40 60,100 100,160 140,100" fill="#4CAF50" stroke="#388E3C" stroke-width="5" />
+
+  <!-- Stylized "S" -->
+  <path fill="#FAFAFA" stroke="#FAFAFA" stroke-width="5" d="M115,65c0,0-6,2-10,9c-2-3-4-7-8-7s-6,4-8,7c-5-8-10-9-10-9s5,4,5,12s-3,12-3,12h8v-9h9v9h8
+    c0,0-3-6-3-12S115,65,115,65z"/>
+</svg>
